@@ -46,7 +46,7 @@
   showtabs=false
 }
 
-\newcommand<>{\alertb}[1]{\setbeamercolor{alerted text}{fg=iqss@red}%
+\newcommand<>{\alertb}[1]{\setbeamercolor{alerted text}{fg=crimson}%
   \begin{alertenv}#2\relax#1\end{alertenv}%
   \setbeamercolor{alerted text}{fg=iqss@blue}%
 }
@@ -66,7 +66,8 @@
 
 \setbeamercolor{normal text}{fg=black,bg=white}
 \setbeamercolor{alerted text}{fg=iqss@blue}
-\setbeamercolor{example text}{fg=iqss@green}
+% shiro change
+\setbeamercolor{example text}{fg=white} 
 
 \setbeamercolor{structure}{fg=iqss@orange}
 
@@ -129,7 +130,7 @@
 \setbeamercolor{subsection name}{}
 \setbeamercolor{subsection title}{parent=titlelike}
 
-\setbeamercolor{subsection in toc}{}
+\setbeamercolor{subsection in toc}{parent=structure}
 \setbeamercolor{subsection in toc shaded}{parent=subsection in toc}
 \setbeamercolor{subsection in head/foot}{parent=palette secondary}
 \setbeamercolor{subsection in sidebar}{parent=palette sidebar primary}
